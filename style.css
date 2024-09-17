@@ -1,0 +1,268 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
+
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Flexbox Layout */
+.container {
+    display: flex;
+    height: 200vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #333;
+    width: 280px;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Sidebar Navigation */
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav li {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.sidebar nav li a:hover {
+    color: #F78DA7;
+}
+
+/* Main Content Styling */
+.main {
+    width: calc(100vw - 280px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Info Container Styling */
+.infocontainer {
+    background-color: #F78DA7;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Developer Info Text */
+.intro {
+    font-family: "Saira", sans-serif;
+    color: rgba(14, 7, 7, 0.925);
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.hello {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Buttons Styling */
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn button {
+    background-color: #248eeb;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: #248eeb;
+}
+
+/* Developer Picture */
+.devpic img {
+    height: 50vh;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Form */
+.contactform {
+    padding: 40px 60px;
+    background-color: rgb(134, 131, 131);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contactform h1 {
+    font-family: "Saira", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Contact Form Input Styling */
+.contactform form div {
+    margin-bottom: 20px;
+}
+
+.contactform form div label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contactform form div input,
+.contactform form div textarea {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Fira Sans", sans-serif;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.contactform form div input:focus,
+.contactform form div textarea:focus {
+    border-color: #248eeb;
+    outline: none;
+}
+
+/* Email Help Text */
+#emailHelp {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #248eeb;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #248eeb;
+}
+.blogitem { 
+margin: 20px 0;
+font-family: "Fira Sans", sans-serif;
+}
+.blogContainer{
+    background-color: rgb(198, 209, 205);
+    height: 150vh;
+}
+.blogContainer h1{
+    font-family: "Fira Sans", sans-serif;
+}
+.blogitem h2{
+    font-family: "Fira Sans", sans-serif;
+}
+.blogitem p{
+    font-family: "Saira", sans-serif;
+}
+.btn-rm {
+    background-color: #248eeb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 20%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-rm:hover {
+    background-color: white;
+    color: #248eeb;
+}
+
+.skillcontainer{
+    padding: 7px;
+}
+.skill{
+    width: 200px;
+    height: 20px;
+    background-color: #248eeb;
+    border: 2px solid black;
+    font-weight: 200;
+}
+.skillitem{
+    padding: 7px;
+display: flex;
+align-items: center;
+}
+.hun{
+    width: 200px;
+    background-color: brown;
+}
+.fif{
+    width: 100px;
+    background-color: #333;
+}
+.ten{
+    width: 30px;
+    background-color: #F78DA7;
+}
